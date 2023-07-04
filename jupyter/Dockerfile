@@ -34,7 +34,7 @@ RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev
 RUN pip3 install --upgrade pip
 RUN pip3 install wget==3.2 pyspark==${spark_version} jupyterlab==${jupyterlab_version}
-RUN pip3 install pandas
+RUN pip3 install pandas==1.5.3
 
 #Scala kernel for Spark
 RUN apt-get install -y ca-certificates-java --no-install-recommends
